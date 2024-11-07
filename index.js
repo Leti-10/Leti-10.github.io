@@ -10,9 +10,9 @@ document.querySelector("h1").onmouseover = event => {
   interval = setInterval(() => {
     event.target.innerText = event.target.innerText
       .split("")
-      .map((letters, index) => {
+      .map((letter, index) => {
         if(index < iteration) {
-          return event.target.dataset.value[index];
+            return event.target.dataset.value[index];
         }
       
         return letters[Math.floor(Math.random() * 26)]
